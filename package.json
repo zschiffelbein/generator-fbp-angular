@@ -1,32 +1,32 @@
 {
-  "name": "generator-cg-angular",
-  "version": "3.2.0",
+  "name": "generator-fbp-angular",
+  "version": "4.0.0",
   "description": "Yeoman Generator for Enterprise Angular projects.",
   "keywords": [
     "yeoman-generator",
     "angular"
   ],
-  "homepage": "https://github.com/cgross/generator-cg-angular",
-  "bugs": "https://github.com/cgross/generator-cg-angular/issues",
+  "homepage": "https://github.com/zschiffelbein/generator-fbp-angular",
+  "bugs": "https://github.com/zschiffelbein/generator-fbp-angular/issues",
   "author": {
-    "name": "Chris Gross",
-    "email": "schtoo@schtoo.com",
-    "url": "https://github.com/cgross"
+    "name": "Zack Schiffelbein ",
+    "email": "zschiffelbein@fishbookspro.com",
+    "url": "https://github.com/zschiffelbein"
   },
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/cgross/generator-cg-angular.git"
+    "url": "git://github.com/zschiffelbein/generator-cg-angular.git"
   },
   "scripts": {
     "test": "mocha"
   },
   "dependencies": {
+    "chalk": "~0.4.0",
+    "ng-parse-module": "~0.1.0",
     "underscore": "~1.5",
     "underscore.string": "~2.3",
-    "yeoman-generator": "~0.16",
-    "chalk": "~0.4.0",
-    "ng-parse-module": "~0.1.0"
+    "yeoman-generator": "^0.16.0"
   },
   "devDependencies": {
     "mocha": "~1.10.0"
