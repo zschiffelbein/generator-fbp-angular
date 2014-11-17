@@ -18,6 +18,8 @@ var PartialGenerator = module.exports = function PartialGenerator(args, options,
 
     yeoman.generators.Base.apply(this, arguments);
 
+    this.uirouter = this.config.get('uirouter');
+
 };
 
 util.inherits(PartialGenerator, yeoman.generators.Base);
@@ -45,7 +47,8 @@ PartialGenerator.prototype.askFor = function askFor() {
 
 PartialGenerator.prototype.files = function files() {
 
-    this.ctrlname = _.camelize(_.classify(this.name)) + 'Ctrl';
+    this.ctrlname = _(this.name).classify() + 'Ctrl';
+    this.dlgname = _(this.name).classify() + 'DlgCtrl';
 
     cgUtils.processTemplates(this.name,this.dir,'partial',this,null,null,this.module);
 

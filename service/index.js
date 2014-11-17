@@ -37,7 +37,7 @@ ServiceGenerator.prototype.askFor = function askFor() {
 };
 
 ServiceGenerator.prototype.files = function files() {
-
+ 
     cgUtils.processTemplates(this.name,this.dir,'service',this,null,null,this.module);
 
 };

@@ -1,6 +1,3 @@
-angular.module('<%= appname %>').factory('<%= _.camelize(name) %>',function() {
+angular.module('<%= appname %>').factory('<%= _(name).classify() %>', function ($resource) {
 
-	var <%= _.camelize(name) %> = {};
-
-	return <%= _.camelize(name) %>;
 });
