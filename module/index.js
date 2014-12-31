@@ -56,6 +56,8 @@ ModuleGenerator.prototype.askFor = function askFor() {
 
 ModuleGenerator.prototype.files = function files() {
 
+    this.ctrlname = _(this.name).classify() + 'Ctrl';
+
     var module = cgUtils.getParentModule(path.join(this.dir,'..'));
     module.dependencies.modules.push(_.camelize(this.name));
     module.save();
